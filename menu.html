@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arizonia&family=Asap:wght@400;700&family=Crimson+Text:wght@700&family=Dancing+Script:wght@700&family=Great+Vibes&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@300;400;500;600;800;900&family=Open+Sans:wght@600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@100;300;400;600;700&family=Raleway:wght@800&family=Roboto:wght@300;500&family=Rowdies:wght@400;700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>PirtlesMenu</title>
+</head>
+<body>
+
+    <nav id="mainNavbar" class="navbar navbar-expand-md py-0 fixed-top scrolled">
+      <div>
+        <a href="#"><img class="logo1" src="imgs/pirtlog2.png"></a>
+      </div>
+      
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html" class="nav-link">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">CONTACT</a>
+          </li>
+          
+        </ul>
+       
+          <a href="order.html">
+            <button type="button" class="btn btn-danger btn-lg navBtn">START ORDER </button>
+          </a>
+        
+      </div>      
+    </nav>
+
+      <div class="menu">
+        <h1 class="text-center text1">MENU</h1>
+      </div>
+      <section class="container-fluid mt-5 mb-5">
+        
+        <h2 class="text-center">Pirtle's Famous Turkey Legs and More! </h2>
+        <h3 class="display-6 text-center">731-432-4351</h3>
+        <h4 class="text-center wings">Turkey Legs &#36 7</h4>
+        <h4 class="text-center">Turkey Sandwich w/ side and drink &#36 6</h4>
+        <h4 class="text-center wings">Whole Wings Plate(3) &#36 7</h4>
+        <h4 class="text-center">(fries and drink)</h4>
+        <h4 class="text-center">Extra Wing &#36 2</h4>
+        <h4 class="text-center wings">Hamburger Only &#36 4</h4>
+        <h4 class="text-center">Hamburger Plate &#36 6</h4>
+        <h4 class="text-center">Cheeseburger Only &#36 5</h4>
+        <h4 class="text-center">Cheeseburger Plate &#36 7</h4>
+        <h4 class="text-center">(fries and drink)</h4>
+        <h4 class="text-center wings">Hotlink Polish Sausage &#36 3</h4>
+        <h4 class="text-center">Hotlink Plate &#36 6</h4>
+        <h4 class="text-center">EXTRA TOPPINGS ADD &#36 1</h4>
+        <h4 class="text-center">Corn Dog &#36 1</h4>
+        <h4 class="text-center wings">Nachos (no meat)</h4>
+        <h4 class="text-center">Small &#36 3</h4>
+        <h4 class="text-center">Large &#36 3</h4>
+        <h4 class="text-center">Fajita Nachos &#36 3</h4>
+        <h4 class="text-center">(Fries or Chips)</h4>
+      </section>
+    
+
+
+
+
+
+
+      <footer>
+             
+        Copyright © 2023 Pirtle's All Rights Reserved.     
+    
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+     $(function(){
+     $(document).scroll(function(){
+         var $nav = $("#mainNavbar");
+         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+     })
+ })
+    </script>
+</body>
+</html>

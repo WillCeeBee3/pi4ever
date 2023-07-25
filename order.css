@@ -1,0 +1,138 @@
+body{
+    background-color: #590007dc;
+    font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
+    background-image: radial-gradient(rgba(48, 48, 48, 0.623),rgba(146, 2, 2, 0.572)), url(imgs/Chicken-Wings-PNG-Transparent-Image.png);
+    animation: transitionIn 0.75s;
+    /* height: 80vh; */
+         
+       
+}
+
+.container-fluid{
+    margin: 10% 0;
+    width: 100%;
+    /* background: rgba(85, 0, 0, 0.59); */
+    /* border: 1px solid beige; */
+}
+
+
+
+.card{
+    height: 85%;
+    background: radial-gradient(red, black);
+    
+}
+
+p,.label{
+    color: beige;
+}
+
+
+  @keyframes transitionIn{
+    from{
+        opacity: 0;
+        /* transform: rotateX(-10px); */
+    }
+
+    to{
+        opacity: 1;
+        /* transform: rotateX(0); */
+    }
+  }
+
+
+
+
+
+h1{
+    font-family: 'Arizonia', cursive;
+    font-size: 70px;
+    text-shadow: 2px 2px 3px rgb(255, 0, 0);
+    color: beige;
+}
+
+
+
+h2{
+    font-family: 'Arizonia', cursive;
+    font-size: 40px;
+    color: beige;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px red;
+}
+
+h3, h4, .check{
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    color: beige;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px red;
+}
+
+.wings{
+    margin-top: 35px;
+}
+
+
+.logo1{
+    width: 45%;
+   
+    
+}
+
+.nav-item a{
+    margin-top: 0px;   
+    
+}
+
+
+#mainNavbar{
+    
+    font-size: 1.5rem;
+    font-weight: 300; 
+     
+    
+}
+
+#mainNavbar .nav-link{
+    color: beige;
+    margin-right: 120px;
+    margin-left: 100px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 3px rgb(255, 0, 0);
+    
+}
+
+#mainNavbar .nav-link:hover{
+    color: #ea1c2c;
+    text-shadow: 1px 1px 1px beige;
+}
+
+
+#mainNavbar .navbar-brand{
+    color: #ea1c2c;
+    font-size: 1.5rem;
+    
+}
+
+.navbar.scrolled{
+    background: rgba(245, 245, 220, 0.536);
+    transition: background 500ms;
+    
+}
+
+
+
+
+
+
+.footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #f5f5dc;
+    color: red;
+  }
+
+  
+ 
