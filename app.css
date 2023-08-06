@@ -99,7 +99,7 @@ h1{
 }
 
 #mainNavbar .nav-link{
-    color: beige;
+    color: rgb(245, 220, 220);
     margin-right: 120px;
     margin-left: 100px;
     font-family:'Times New Roman', Times, serif;
@@ -186,11 +186,15 @@ footer {
 
 
 
-@media(max-width: 1200px){
+@media(max-width: 1400px){
     h1{
         font-weight: 100;
         font-size: 3rem;
+        margin-top: 300px;
     }
+
+    
+    
 }
 
 
