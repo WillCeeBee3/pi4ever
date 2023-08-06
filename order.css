@@ -10,7 +10,6 @@ body{
 }
 
 .container-fluid{
-    margin: 10% 0;
     width: 100%;
     /* background: rgba(85, 0, 0, 0.59); */
     /* border: 1px solid beige; */
@@ -122,6 +121,184 @@ h3, h4, .check{
     
 }
 
+.cart{
+    width: 50%;
+    margin-top: 10px;
+    
+}
+
+.btn{
+    box-shadow: 1px 2px 5px rgb(130, 0, 0);
+}
+
+.container{
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr 50px;
+    margin-top: 100px;
+    
+}
+header .shopping{
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+}
+header .shopping img{
+    width: 40px;
+    
+}
+
+
+
+header .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-top: 50px;
+}
+.list .item{
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 5px 5px rgb(232, 232, 208);
+    background: radial-gradient(red, black);
+    border-radius: 5%;
+}
+.list .item img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 1px 5px rgb(232, 232, 208);
+    border: 4px solid rgb(57, 0, 0);
+}
+.list .item .title{
+    font-weight: 600;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    color: beige;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px red;
+    margin-top: 5px;
+    
+
+}
+.list .item .price{
+    margin: 10px;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    color: beige;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px red;
+}
+.list .item button{
+    background-color: #ec2121;
+    color: beige;
+    width: 50%;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow:1px 2px 2px beige;
+}
+
+.list .item button:hover{
+    background-color: #290000;
+    color: white;
+}
+.shopCard{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 400px;
+    background-color: rgb(112, 0, 0);
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .shopCard{
+    left: calc(100% - 400px);
+}
+.active .container{
+   transform: translateX(-200px);
+   
+}
+
+.active #mainNavbar{
+    transform: translateY(-200px);
+    transition: all 1s ease-in-out;
+}
+.shopCard .cartCard{
+    color: #ffffff;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+}
+.shopCard .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.shopCard .checkOut div{
+    background-color: #e80e0e;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.shopCard .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 0%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+
+
 
 
 
@@ -133,6 +310,49 @@ h3, h4, .check{
     background-color: #f5f5dc;
     color: red;
   }
+
+  @keyframes transitionIn{
+    from{
+        opacity: 0;
+        /* transform: rotateX(-10px); */
+    }
+
+    to{
+        opacity: 1;
+        /* transform: rotateX(0); */
+    }
+  }
+
+
+  @media(max-width: 1200px){
+    h1{
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .list{
+        width: 50%;
+        display: inline-block;
+       }
+    .list .item{
+        margin-bottom: 20px;
+    }
+   .navLinks.nav-link{
+        width: 50%;
+        
+    }
+
+}
+
+@media(max-width: 300px){
+    .list{
+        width: 50%;
+        display: inline-block;
+        
+       }
+    .list .item{
+        margin-bottom: 20px;
+    }
+}
 
   
  
